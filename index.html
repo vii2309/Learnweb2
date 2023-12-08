@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="assets/css/bootsnav.css">
+    <script src="https://kit.fontawesome.com/8215d0dba9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header-nav">
+        <!-- 1 -->
+        <div class="nav-top">
+            <h1>nav</h1>
+        </div>
+        <!-- 2 -->
+        <div class="nav-bottom">
+            <h1>Logo</h1>
+        </div>
+    </header>
+    <!-- header -->
+    <!-- body -->
+    <section>
+        <!-- 3 -->
+        <div class="nav-category">
+            <nav>
+                <h2>category</h2>
+                <li>
+                    <h1>category1</h1>
+                </li>
+                <li>
+                    <h1>category2</h1>
+                </li>
+                <li>
+                    <h1>category3</h1>
+                </li>
+            </nav>
+        </div>
+        <!-- 4 -->
+        <div class="nav-menu" id="myTopnav">
+            <ul class="ul-menu">
+                <li>
+                    <a href="#trangchu" style="color: #35b3ee;">
+                        <i class="fas fa-home" style="color: #35b3ee;"> </i>
+                        Trang chủ
+                    </a>
+                </li>
+                <li class=""><a href="#gioithieu">Giới thiệu</a></li>
+                <li class="subnav"><a href="#experience" class="dropbtn">Dịch vụ <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </li>
+                <li class=""><a href="#profiles">Tin tức-Sự kiện</a></li>
+                <li class=""><a href="#portfolio">Tuyển dụng</a></li>
+                <li class=""><a href="#clients">Đối tác</a></li>
+                <li class=""><a href="#contact">Liên hệ</a></li>
+                <li class=""> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                  </a></i></a></li>
+               
+
+
+            </ul>
+
+        </div>
+        <!-- 5 -->
+        <div class="nav-slider">
+            <h1>slider</h1>
+        </div>
+    </section>
+    <!-- body -->
+    <!-- footer -->
+    <footer>
+
+    </footer>
+    <!-- footer -->
+</body>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav-menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav-menu";
+      }
+    }
+    </script>
+</html>
