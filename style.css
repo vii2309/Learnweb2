@@ -21,31 +21,92 @@ html {
 .nav-top {
   width: 100%;
   height: 20%;
-  background: blue;
-  text-align: center;
+  background-color: #35b3ee;
 }
 
 .nav-bottom {
   width: 100%;
-  height: 70%;
+  height: 90%;
   background-color: red;
-  text-align: center;
+  overflow: hidden;
 }
 
+.container-nav-bottom {
+  width: 90%;
+  background-color: #04AA6D;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 200%;
+}
+
+.Search-btn {
+  margin-left: 24%;
+  margin-top: -6.5%;
+  padding: 20px;
+}
+
+.logo img {
+  overflow: hidden;
+}
+
+/* search */
+
+form.button-search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  /* float: left; */
+  width: 70%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.button-search button {
+  /* float: left; */
+  width: 10%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  /* Prevent double borders */
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+form.button-search button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.button-search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/*  */
 .nav-category {
   width: 100%;
   height: 20%;
   background-color: purple;
   text-align: center;
+  margin-top: 5px;
 }
 
 .nav-category nav {
   float: left;
   width: 20%;
-  height: 900px; 
+  height: 900px;
   background: #ccc;
   padding: 20px;
   margin-left: 5%;
+}
+
+section {
+  margin-top: 10px;
 }
 
 section::after {
@@ -191,6 +252,14 @@ li.subnav {
 
 @media screen and (max-width: 768px) {
 
+  /* nav */
+  .nav-bar-top {
+    overflow: hidden;
+  }
+  .nav-bar-top p{
+    font-size: small;
+  }
+  /*  */
   #main-menu {
     flex-direction: column;
     text-align: left;
@@ -198,13 +267,26 @@ li.subnav {
     max-height: 600px;
     float: right;
   }
-  #main-menu li{
-   max-height: 100px;
+
+  #main-menu li {
+    max-height: 100px;
   }
-  #main-menu li a{
+
+  #main-menu li a {
     margin-top: -70px;
-    
-   }
+
+  }
+
+  /* cate */
+  .nav-category nav {
+    margin: 0;
+    width: 20%;
+    height: 900px;
+    background: #ccc;
+    padding: 20px;
+  }
+
+  /*  */
   .nav-slider {
     width: 75%;
     height: 500px;
@@ -221,7 +303,44 @@ li.subnav {
     display: block;
   }
 
+  /* nav menu */
+  .nav-bottom {
+    width: 100%;
+    height: 77%;
+    background-color: red;
 
+  }
+
+  .container-nav-bottom {
+    width: 90%;
+    background-color: #04AA6D;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+  }
+
+  .Search-btn {
+    margin-left: 24%;
+    margin-top: -10%;
+    padding: 10px;
+  }
+
+  .logo img {
+    height: 50px;
+    /* search */
+
+    form.button-search input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      /* float: left; */
+      width: 60%;
+      background: #f1f1f1;
+    }
+
+    /*  */
+
+  }
 }
 
 /* slider */
@@ -230,7 +349,7 @@ li.subnav {
   display: block;
   overflow: hidden;
   margin-top: auto;
-  
+
 }
 
 #slider figure {
@@ -248,27 +367,27 @@ li.subnav {
 
 @keyframes slider {
   0% {
-      left: 0;
+    left: 0;
   }
 
   20% {
-      left: 0;
+    left: 0;
   }
 
   25% {
-      left: -100%;
+    left: -100%;
   }
 
   45% {
-      left: -100%;
+    left: -100%;
   }
 
   50% {
-      left: -200%;
+    left: -200%;
   }
 
   70% {
-      left: -200%;
+    left: -200%;
   }
 
   /* 75% {
@@ -281,13 +400,20 @@ li.subnav {
   left: -400%;
 } */
 }
+
 /*  */
 /* categoty */
-span.Name-list-category > h2{
+span.Name-list-category>h2 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;
 }
-.nav-category li {
+
+.nav-category .list-category ul h1 {
   text-decoration: none;
+  margin-top: 30px;
+  font-size: 20px;
 }
-/*  */
+
+.nav-category .list-category {
+  margin-top: 5%;
+}

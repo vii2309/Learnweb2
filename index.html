@@ -8,15 +8,15 @@
     <!-- bootsnav -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootsnav.css">
     <script src="https://kit.fontawesome.com/8215d0dba9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <script>
-        $(document).ready(function() {
-            $('#toggle').click(function() {
+        $(document).ready(function () {
+            $('#toggle').click(function () {
                 $('#nav-menu-main').slideToggle();
             });
         })
@@ -25,14 +25,27 @@
     <header id="header-nav">
         <!-- 1 -->
         <div class="nav-top">
-            <h1>nav</h1>
+            <div class="nav-bar-top" style=" height: 100%; margin-left: 5%; overflow: hidden; ">
+                <p style=" color:white ; ">🗺️ 114/18/12 Vườn Lài,An Phú Đông,Quận 12,HCM &emsp; 📞 0935.911.775</p>
+            </div>
         </div>
         <!-- 2 -->
         <div class="nav-bottom">
-            <h1>Logo</h1>
+            <div class="container-nav-bottom">
+                <div class="logo">
+                    <img src="img/logo3.png" alt="">
+                </div>
+                <div class="Search-btn">
+                    <form class="button-search" action="action_page.php">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+           
         </div>
     </header>
-    <!-- header --> 
+    <!-- header -->
     <!-- body -->
     <section>
         <!-- 3 -->
@@ -41,16 +54,20 @@
                 <span class="Name-list-category">
                     <h2>DANH MỤC SẢN PHẦM</h2>
                 </span>
-                
-                <li>
-                    <h1>category1</h1>
-                </li>
-                <li>
-                    <h1>category2</h1>
-                </li>
-                <li>
-                    <h1>category3</h1>
-                </li>
+                <div style="background-color: antiquewhite; width: 100%;height: 3px;">
+                </div>
+                <div class="list-category">
+                    <Ul>
+                        <h1>category1</h1>
+                    </Ul>
+                    <Ul>
+                        <h1>category2</h1>
+                    </Ul>
+                    <Ul>
+                        <h1>category3</h1>
+                    </Ul>
+                </div>
+            
             </nav>
         </div>
         <!-- 4 -->
@@ -59,29 +76,30 @@
                 <i class="fas fa-bars"></i>
             </div>
             <nav id="nav-menu-main">
-            <ul id="main-menu" class="ul-menu">
-                <li>
-                    <a href="#trangchu" style="color: #35b3ee;">
-                        <i class="fas fa-home" style="color: #35b3ee;"> </i>
-                        Trang chủ
-                    </a>
-                </li>
-                <li class=""><a href="#gioithieu">Giới thiệu</a></li>
-                <li class="subnav"><a href="#experience" class="dropbtn">Dịch vụ <i class="fa fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                </li>
-                <li class=""><a href="#profiles">Tin tức-Sự kiện</a></li>
-                <li class=""><a href="#portfolio">Tuyển dụng</a></li>
-                <li class=""><a href="#clients">Đối tác</a></li>
-                <li class=""><a href="#contact">Liên hệ</a></li>
-                <li class=""> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa-solid fa-bars"></i>
-                  </a></i></a></li>
-            </ul>
+                <ul id="main-menu" class="ul-menu">
+                    <li>
+                        <a href="#trangchu" style="color: #35b3ee;">
+                            <i class="fas fa-home" style="color: #35b3ee;"> </i>
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class=""><a href="#gioithieu">Giới thiệu</a></li>
+                    <li class="subnav"><a href="#experience" class="dropbtn">Dịch vụ <i
+                                class="fa fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class=""><a href="#profiles">Tin tức-Sự kiện</a></li>
+                    <li class=""><a href="#portfolio">Tuyển dụng</a></li>
+                    <li class=""><a href="#clients">Đối tác</a></li>
+                    <li class=""><a href="#contact">Liên hệ</a></li>
+                    <li class=""> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa-solid fa-bars"></i>
+                        </a></i></a></li>
+                </ul>
             </nav>
         </div>
         <!-- 5 -->
@@ -115,4 +133,5 @@
       }
     }
     </script> -->
+
 </html>
