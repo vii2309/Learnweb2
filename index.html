@@ -3,13 +3,24 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- bootsnav -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
     <link rel="stylesheet" href="assets/css/bootsnav.css">
     <script src="https://kit.fontawesome.com/8215d0dba9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <script>
+        $(document).ready(function() {
+            $('#toggle').click(function() {
+                $('#nav-menu-main').slideToggle();
+            });
+        })
+    </script>
     <!-- header -->
     <header id="header-nav">
         <!-- 1 -->
@@ -21,7 +32,7 @@
             <h1>Logo</h1>
         </div>
     </header>
-    <!-- header -->
+    <!-- header --> 
     <!-- body -->
     <section>
         <!-- 3 -->
@@ -41,7 +52,11 @@
         </div>
         <!-- 4 -->
         <div class="nav-menu" id="myTopnav">
-            <ul class="ul-menu">
+            <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav-menu-main">
+            <ul id="main-menu" class="ul-menu">
                 <li>
                     <a href="#trangchu" style="color: #35b3ee;">
                         <i class="fas fa-home" style="color: #35b3ee;"> </i>
@@ -63,11 +78,8 @@
                 <li class=""> <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa-solid fa-bars"></i>
                   </a></i></a></li>
-               
-
-
             </ul>
-
+            </nav>
         </div>
         <!-- 5 -->
         <div class="nav-slider">
@@ -81,7 +93,7 @@
     </footer>
     <!-- footer -->
 </body>
-<script>
+<!-- <script>
     function myFunction() {
       var x = document.getElementById("myTopnav");
       if (x.className === "nav-menu") {
@@ -90,5 +102,5 @@
         x.className = "nav-menu";
       }
     }
-    </script>
+    </script> -->
 </html>
