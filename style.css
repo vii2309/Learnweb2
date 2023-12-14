@@ -271,6 +271,8 @@ li.subnav {
     background-color: #04AA6D;
     max-height: 600px;
     float: right;
+    transition: all 0.3s;
+    backface-visibility: hidden;
   }
 
   #main-menu li {
@@ -544,4 +546,15 @@ span.Name-list-category>h2 {
   background-color: #04AA6D;
   float: right;
   margin-top: 30px;
+}
+/* footer */
+footer {
+  width: 100%;
+  height: 500px;
+  margin-top: 70%;
+}
+.container-footer {
+  background-color: #04AA6D;
+  width: 100%;
+  height: 100%;
 }
